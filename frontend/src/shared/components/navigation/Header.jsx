@@ -5,7 +5,6 @@ import {
   HiOutlineSearch,
 } from "react-icons/hi";
 import { Popover, Transition, Menu } from "@headlessui/react";
-
 import { Fragment } from "react";
 import classNames from "classnames";
 import { useNavigate } from "react-router-dom";

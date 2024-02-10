@@ -50,6 +50,5 @@
 .button_container {
     display: flex;
     justify-content: end;
-
     width: 100%;
 }

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "express-validator": "^7.0.1",
     "mongoose": "^7.6.8",
     "mongoose-unique-validator": "^4.0.0",
-    "nodeman": "^1.1.2"
+    "nodeman": "^1.1.2",
+    "nodemon": "^3.0.3"
   }
 }

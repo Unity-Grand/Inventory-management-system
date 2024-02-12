@@ -1,8 +1,8 @@
 import React from "react";
-import InventryItemForm from "../../users/components/InventryItemForm";
+import InventryItemForm from "../Components/InventryItemForm";
 
 function Products() {
-  return <InventryItemForm/>
+  return <InventryItemForm />;
 }
 
 export default Products;

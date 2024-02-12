@@ -1,6 +1,6 @@
 import React from "react";
-import ToggleButton from "../../components/ToggleButton";
-import InputBox from "../../components/InputBox";
+import ToggleButton from "./ToggleButton";
+import InputBox from "./InputBox";
 import Button from "./Button";
 
 function ItemForm() {

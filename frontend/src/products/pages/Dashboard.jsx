@@ -55,7 +55,7 @@ function Dashboard() {
           </div>
         </div>
       </div>
-      <div className="w-full flex-grow flex flex-col p-6">
+      <div className="w-full h-8/12 flex flex-col p-6 ">
         <div className="h-full bg-white rounded-md divide-y divide-black-700">
           <div className="flex flex-row w-full p-3">
             <div className="w-8/12 flex items-center">

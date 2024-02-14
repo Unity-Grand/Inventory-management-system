@@ -20,7 +20,7 @@ function ItemForm() {
             placeholder="Select Product Category"
             massage=""
           />
-          <div class="flex flex-wrap -mx-3 mb-5">
+          <div class="flex flex-wrap -mx-3 mb-3">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <input
                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
@@ -51,7 +51,7 @@ function ItemForm() {
             massage=""
           />
 
-          <div class="flex flex-wrap -mx-3 mb-5">
+          <div class="flex flex-wrap -mx-3 mb-3">
             <div class="w-full md:w-1/2 px-10 mb-6 md:mb-0">
               <h4 class="divide-x-2">Discount</h4>
             </div>
@@ -61,7 +61,7 @@ function ItemForm() {
             </div>
           </div>
 
-          <div class="flex flex-wrap -mx-3 mb-5">
+          <div class="flex flex-wrap -mx-3 mb-3">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <input
                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
@@ -81,21 +81,34 @@ function ItemForm() {
           </div>
         </div>
         <div class="w-full md:w-1/2 px-3 mt-2">
-          <InputBox
-            id="grid-item-description"
-            type="text"
-            placeholder="Item Description"
-            massage=""
-          />
-          <InputBox
-            id="grid-product"
-            type="text"
-            placeholder="Product Detail Description"
-            massage=""
-          />
+          <div class="flex flex-wrap -mx-3 mb-3">
+            <div class="w-full px-3">
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-lg py-10 px-4 mb-2 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-item-description"
+                type="text"
+                placeholder="Item Description"
+              />
+              <p class="text-gary-600 text-xs italic"></p>
+            </div>
+          </div>
+          <h4 class="flex flex-wrap px-3 -mx-3 mb-3 ml-1">
+            Product Detail Description
+          </h4>
+          <div class="flex flex-wrap -mx-3 mb-3">
+            <div class="w-full px-3">
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-lg py-20 px-4 mb-2 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-product"
+                type="text"
+                placeholder="Product Add a detail description for your product..."
+              />
+              <p class="text-gary-600 text-xs italic"></p>
+            </div>
+          </div>
 
-          <h4 class="flex flex-wrap px-3 -mx-3 mb-3 ml-1">Return Policy</h4>
-          <h4 class="flex flex-wrap px-3 mb-5">Date Added</h4>
+          <h4 class="flex flex-wrap px- -mx-3 ml-1">Return Policy</h4>
+          <h4 class="flex flex-wrap px-3 mb-3">Date Added</h4>
           <div class="flex flex-wrap -mx-3 mb-5">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <input

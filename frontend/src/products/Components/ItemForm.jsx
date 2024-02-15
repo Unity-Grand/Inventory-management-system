@@ -5,9 +5,9 @@ import Button from "./Button";
 
 function ItemForm() {
   return (
-    <form class="border-solid rounded-lg m-2 grid place-items-center bg-gray-50 border-inherit">
+    <form class="border-solid rounded-lg grid place-items-center bg-gray-50 border-inherit shadow-xl h-full">
       <div class="flex flex-row justify-between border-solid rounded-lg">
-        <div class="w-full md:w-1/2 px-3 mt-2 mr-4">
+        <div class="w-full md:w-1/2 px-3 mt-5 mr-4">
           <InputBox
             id="grid-item-name"
             type="text"
@@ -80,11 +80,11 @@ function ItemForm() {
             </div>
           </div>
         </div>
-        <div class="w-full md:w-1/2 px-3 mt-2">
+        <div class="w-full md:w-1/2 px-3 mt-5">
           <div class="flex flex-wrap -mx-3 mb-3">
             <div class="w-full px-3">
               <input
-                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-lg py-10 px-4 mb-2 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-lg py-9 px-4 mb-2 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-item-description"
                 type="text"
                 placeholder="Item Description"
@@ -92,13 +92,13 @@ function ItemForm() {
               <p class="text-gary-600 text-xs italic"></p>
             </div>
           </div>
-          <h4 class="flex flex-wrap px-3 -mx-3 mb-3 ml-1">
+          <h4 class="flex flex-wrap px-3 -mx-3 mb-1 ml-1">
             Product Detail Description
           </h4>
-          <div class="flex flex-wrap -mx-3 mb-3">
+          <div class="flex flex-wrap -mx-3 mb-2">
             <div class="w-full px-3">
               <input
-                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-lg py-20 px-4 mb-2 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded-lg py-20 px-3 mb-2 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-product"
                 type="text"
                 placeholder="Product Add a detail description for your product..."
@@ -107,9 +107,9 @@ function ItemForm() {
             </div>
           </div>
 
-          <h4 class="flex flex-wrap px- -mx-3 ml-1">Return Policy</h4>
-          <h4 class="flex flex-wrap px-3 mb-3">Date Added</h4>
-          <div class="flex flex-wrap -mx-3 mb-5">
+          <h4 class="flex flex-wrap px-0 -mx-3 ml-1">Return Policy</h4>
+          <h4 class="flex flex-wrap px-2 mb-3">Date Added</h4>
+          <div class="flex flex-wrap -mx-3 mb-4">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <input
                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
@@ -129,8 +129,9 @@ function ItemForm() {
           </div>
         </div>
       </div>
-      <div class="m-5">
-        <Button />
+      <div class="m-5 flex items-center space-x-4">
+        <Button name="Save & Draft" />
+        <Button name="Save & Publish" />
       </div>
     </form>
   );

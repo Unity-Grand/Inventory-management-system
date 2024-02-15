@@ -1,6 +1,4 @@
 import React from "react";
-import "./InventryItemForm.css";
-import Form from "./ItemForm";
 import ItemForm from "./ItemForm";
 import ImageInput from "./ImageInput";
 

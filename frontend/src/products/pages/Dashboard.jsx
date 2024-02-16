@@ -40,17 +40,17 @@ function Dashboard() {
             <h2 className="font-medium">Category</h2>
           </div>
           <div className="flex flex-row items-center w-full h-full mx-0">
-            <div className="w-1/4 flex justify-center items-center border border-blue-500 rounded-2xl p-auto h-3/4 m-1">
+            <div className="w-1/4 flex justify-center items-center border border-blue-500 rounded-2xl p-auto h-3/4 m-1 cursor-pointer">
               <h3>iPhone</h3>
             </div>
-            <div className="w-1/4 flex justify-center items-center border border-red-500 rounded-2xl p-auto h-3/4 m-1">
+            <div className="w-1/4 flex justify-center items-center border border-red-500 rounded-2xl p-auto h-3/4 m-1 cursor-pointer">
               <h3>Macbook</h3>
             </div>
-            <div className="w-1/4 flex justify-center items-center border border-green-500 rounded-2xl p-auto h-3/4 m-1">
+            <div className="w-1/4 flex justify-center items-center border border-green-500 rounded-2xl p-auto h-3/4 m-1 cursor-pointer">
               <h3>iPad</h3>
             </div>
-            <div className="w-1/4 flex justify-center items-center border border-yellow-500 rounded-2xl p-auto h-3/4 m-1">
-              <h3>Accessories </h3>
+            <div className="w-1/4 flex justify-center items-center border border-yellow-500 rounded-2xl p-auto h-3/4 m-1 cursor-pointer">
+              <h3>Accessories</h3>
             </div>
           </div>
         </div>
@@ -59,16 +59,20 @@ function Dashboard() {
         <div className="h-full bg-white rounded-md divide-y divide-black-700">
           <div className="flex flex-row w-full p-3">
             <div className="w-8/12 flex items-center">
-              <h2 className="font-medium">Inventory Summery</h2>
+              <h2 className="font-medium cursor-pointer">Inventory Summery</h2>
             </div>
             <div className="w-2/12 flex justify-center border border-gray-500 m-1 rounded-md">
               <input type="text" placeholder="Search" className="max-w-full" />
             </div>
             <div className="w-1/12 flex justify-center border border-gray-500 m-1 rounded-md">
-              <h2 className="font-medium">Filter</h2>
+              <button>
+                <h2 className="font-medium">Filter</h2>
+              </button>
             </div>
             <div className="w-1/12 flex justify-center border border-gray-500 m-1 rounded-md">
-              <h2 className="font-medium">Sort</h2>
+              <button>
+                <h2 className="font-medium">Sort</h2>
+              </button>
             </div>
           </div>
           <div className="w-full flex flex-row p-2">

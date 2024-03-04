@@ -1,16 +1,17 @@
 const express = require("express");
+
+
+const productsControllers = require("../controllers/products-controllers");
+
 const router = express.Router();
-const product = require("../models/product");
 
-router.post("/product", async (req, res) => {
-  const product = new product(req.body);
+router.get("/all-products", productsControllers.getProducts);
 
-  try {
-    await product.save();
-    res.status(201).send(product);
-  } catch (e) {
-    res.status(400).send(e);
-  }
-});
+router.post("/upload-product", productsControllers.uploadProduct);
+
+router.patch("/product/:id", productsControllers.updateProduct);
+
+router.delete("/product/:id", productsControllers.deleteProduct);
 
 module.exports = router;
+

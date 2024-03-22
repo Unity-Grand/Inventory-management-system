@@ -17,6 +17,12 @@ export const DASHBOARD_SIDEBAR_LINKS = [
     icon: <HiOutlineViewGrid />,
   },
   {
+    key: "inventory",
+    label: "Inventory",
+    path: "/inventory",
+    icon: <HiOutlineViewGrid />,
+  },
+  {
     key: "products",
     label: "Products",
     path: "/products",
@@ -34,18 +40,6 @@ export const DASHBOARD_SIDEBAR_LINKS = [
     path: "/customers",
     icon: <HiOutlineUsers />,
   },
-  {
-    key: "transactions",
-    label: "Transactions",
-    path: "/transactions",
-    icon: <HiOutlineDocumentText />,
-  },
-  {
-    key: "messages",
-    label: "Messages",
-    path: "/messages",
-    icon: <HiOutlineAnnotation />,
-  },
 ];
 
 export const DASHBOARD_SIDEBAR_BOTTOM_LINKS = [
@@ -54,11 +48,5 @@ export const DASHBOARD_SIDEBAR_BOTTOM_LINKS = [
     label: "Settings",
     path: "/settings",
     icon: <HiOutlineCog />,
-  },
-  {
-    key: "support",
-    label: "Help & Support",
-    path: "/support",
-    icon: <HiOutlineQuestionMarkCircle />,
   },
 ];

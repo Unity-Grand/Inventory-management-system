@@ -36,7 +36,7 @@ function Dashboard() {
           </div>
         </div>
         <div className="w-7/12 p-6 bg-white rounded-md shadow-inner ml-3">
-          <div>
+          <div className="cursor-pointer">
             <h2 className="font-medium">Category</h2>
           </div>
           <div className="flex flex-row items-center w-full h-full mx-0">

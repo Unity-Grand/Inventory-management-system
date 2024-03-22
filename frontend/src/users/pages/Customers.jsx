@@ -1,7 +1,9 @@
 import React from "react";
 
+import Form from "../components/Form";
+
 function Customers() {
-  return <div>Customers</div>;
+  return <Form />;
 }
 
 export default Customers;

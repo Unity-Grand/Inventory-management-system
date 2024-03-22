@@ -1,5 +1,5 @@
 import React from "react";
-import Category from "../Components/Category_view/category";
+import Category from "../Components/Category_view/Category";
 
 function Products() {
   const products = ["Iphone", "Samsung", "Huawei"];

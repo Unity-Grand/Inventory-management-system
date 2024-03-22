@@ -1,6 +1,6 @@
 import React from 'react';
 import CategoryName from './CategoryName';
-import Product from '../product_view/Product/Product';
+
 
 
 function Category(prop) {

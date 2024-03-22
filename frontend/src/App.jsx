@@ -15,10 +15,11 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/" exact element={<Layout />}>
           <Route index element={<Dashboard />} />
+          <Route path="inventory" element={<Inventory />} />
           <Route path="products" element={<Products />} />
           <Route path="customers" element={<Customers />} />
           <Route path="orders" element={<Orders />} />
-          <Route path="Inventory" element={<Inventory />} />
+
         </Route>
       </Routes>
     </Router>

@@ -1,6 +1,21 @@
 import * as React from "react";
+import { useNavigate } from "react-router-dom";
+
 
 export default function Form() {
+
+  const navigate = useNavigate();
+
+  const handleSubmit = () => {
+    console.log("Form submitted");
+    navigate('/')
+
+
+
+
+  }
+
+
   return (
     <div className="bg-white   px-10 py-5 rounded-3xl bottom-2 border-gray-200">
       <h1 className="text-5xl font-semibold">Welcome...</h1>
@@ -27,7 +42,7 @@ export default function Form() {
             <input type="checkbox" id="remember" />
             <label
               className="ml-2 text-base font-medium text-sm"
-              for="remember"
+              htmlFor="remember"
             >
               Remember for 30 days
             </label>
@@ -37,7 +52,10 @@ export default function Form() {
           </button>
         </div>
         <div className="mt-8 flex flex-col gap-y-4">
-          <button className="active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all  py-3 rounded-xl bg-gray-500 text-white text-lg font-medium">
+          <button
+            className="active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all  py-3 rounded-xl bg-gray-500 text-white text-lg font-medium"
+            onClick={handleSubmit}
+          >
             Sign in
           </button>
 

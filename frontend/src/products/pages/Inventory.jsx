@@ -1,6 +1,15 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 function Inventory() {
+  const navigate = useNavigate()
+  const navigateCategory = () => {
+    navigate('/products')
+  }
+  const navigateAddProducts = () => {
+    navigate('/products/add')
+  }
+
   return (
     <div className="w-full h-full flex flex-col">
       <div className="w-full h-1/12  flex flex-row px-4">
@@ -8,8 +17,8 @@ function Inventory() {
           <h3 className="font-semibold">Inventory Summery</h3>
         </div>
         <div className="w-1/2 p-3 flex justify-end">
-          <button className="border-solid p-3 bg-blue-500 rounded-lg">
-            <h1 className="font-medium text-white"> + Add New Product</h1>
+          <button className="border-solid p-3 bg-blue-500 rounded-lg" onClick={navigateAddProducts}>
+            <h1 className="font-medium text-white" > + Add New Product</h1>
           </button>
         </div>
       </div>
@@ -36,7 +45,7 @@ function Inventory() {
           </div>
         </div>
         <div className="w-7/12 p-6 bg-white rounded-md shadow-inner ml-3">
-          <div className="cursor-pointer">
+          <div className="cursor-pointer" onClick={navigateCategory}>
             <h2 className="font-medium">Category</h2>
           </div>
           <div className="flex flex-row items-center w-full h-full mx-0">
